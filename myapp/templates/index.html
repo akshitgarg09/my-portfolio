@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block header %}
+  {% include 'sections/header.html' %}
+{% endblock %}
+
+{% block body %}
+  {% include 'sections/portfolio.html' %}
+  {% include 'sections/about.html' %}
+  {% include 'sections/contact.html' %}
+  {% include 'sections/portfolio_modals.html' %}
+{% endblock %}
+
+{% block scripts %}
+  <script src="{% static 'js/contact.js' %}"></script>
+{% endblock %}
+
+{% block footer %}
+  {% include 'sections/footer.html' %}
+{% endblock %}
